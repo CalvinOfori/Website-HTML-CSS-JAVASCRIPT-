@@ -1,0 +1,13 @@
+/* Custom scroll behavior and font family */
+body {
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Style for the active nav link */
+.nav-link.active {
+    font-weight: 700;
+    color: #d1d5db; /* A lighter gray for active state */
+}
+

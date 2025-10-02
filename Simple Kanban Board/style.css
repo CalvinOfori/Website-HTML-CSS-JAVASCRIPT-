@@ -1,0 +1,92 @@
+/* BASIC RESET */
+* {
+   margin: 0;
+   padding: 0; 
+   box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* FIX: Set the container to display its contents in a vertical column */
+.container {
+  text-align: center;
+  width: 100%;
+  padding: 1.2rem;
+  
+  /* ADD these lines to stack h1 and .board vertically */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+    /* FIX: Corrected typo from '2 rem' to '2rem' */
+    font-size: 2rem; 
+}
+
+.board{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+.list{
+    background-color: rgb(253, 221, 180);
+    padding: 1rem;
+    border-radius: 10px;
+    width: 30%;
+    min-height: 400px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.list h2{
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 1.5rem;
+}
+
+.card{
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    cursor: grab;
+    transition: background-color 0.5s ease;
+}
+
+.card:active{
+    cursor: grabbing;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.list.over{
+    background-color: rgb(221, 144, 44);
+}
+
+@media(max-width: 768px){
+    .board{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    
+}
+

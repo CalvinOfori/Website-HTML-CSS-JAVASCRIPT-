@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Tailwind CSS CDN (should be included before your custom CSS) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" xintegrity="sha512-iecdLmaskl7CV7LKJp6L/4V7G7Q97K5n2k12A27s1F2t7j8g/1E/y1QzG45j+4n1a3G1/9Vl7T8e1b5I+8h+0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-gray-900 text-gray-300">
+
+    <!-- Sticky Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-gray-900 bg-opacity-90 backdrop-blur-sm shadow-lg">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl md:text-2xl font-bold text-white tracking-wider">My Portfolio</a>
+            <div class="hidden md:flex space-x-6 lg:space-x-10">
+                <a href="#hero" class="nav-link text-gray-400 hover:text-white transition-colors duration-300">Home</a>
+                <a href="#skills" class="nav-link text-gray-400 hover:text-white transition-colors duration-300">Skills</a>
+                <a href="#projects" class="nav-link text-gray-400 hover:text-white transition-colors duration-300">Projects</a>
+                <a href="#contact" class="nav-link text-gray-400 hover:text-white transition-colors duration-300">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-400 hover:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 pb-4">
+            <a href="#hero" class="block py-2 px-6 text-gray-400 hover:text-white transition-colors duration-300">Home</a>
+            <a href="#skills" class="block py-2 px-6 text-gray-400 hover:text-white transition-colors duration-300">Skills</a>
+            <a href="#projects" class="block py-2 px-6 text-gray-400 hover:text-white transition-colors duration-300">Projects</a>
+            <a href="#contact" class="block py-2 px-6 text-gray-400 hover:text-white transition-colors duration-300">Contact</a>
+        </div>
+    </header>
+
+    <main class="pt-24">
+        <!-- Hero Section -->
+        <section id="hero" class="container mx-auto px-6 py-20 flex flex-col md:flex-row items-center justify-between min-h-screen">
+            <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+                <h1 class="text-4xl lg:text-6xl font-extrabold text-white leading-tight">
+                    Hello, I'm <br class="md:hidden">
+                    <span class="text-indigo-500">Auracle</span>
+                </h1>
+                <p class="mt-4 text-lg lg:text-xl text-gray-400">
+                    A passionate <span class="font-semibold text-white">Graphic Designer</span>, <span class="font-semibold text-white">Mobile Apps Developer</span>, and <span class="font-semibold text-white">AI Automation Specialist</span>.
+                </p>
+                <a href="#projects" class="mt-8 inline-block px-8 py-3 text-lg font-medium text-white bg-indigo-600 rounded-full shadow-lg hover:bg-indigo-700 transition-colors duration-300 transform hover:scale-105">
+                    View My Work
+                </a>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <!-- Placeholder for profile image -->
+                 <img src="Auracode.png" alt="Profile Image" class="h-64 w-64 md:h-80 md:w-80 rounded-full object-cover shadow-2xl">
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="container mx-auto px-6 py-20 min-h-screen">
+            <h2 class="text-4xl font-extrabold text-white text-center mb-16">My Skills</h2>
+            <div class="grid md:grid-cols-3 gap-12">
+                <!-- Graphic Design Skill Card -->
+                <div class="bg-gray-800 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="text-4xl text-indigo-500 mb-4 text-center">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white text-center mb-4">Graphic Design</h3>
+                    <p class="text-gray-400 text-center">
+                        I create visually stunning and effective designs for branding, marketing materials, and digital interfaces, bringing ideas to life with creativity and precision.
+                    </p>
+                </div>
+                <!-- Mobile Apps Dev Skill Card -->
+                <div class="bg-gray-800 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="text-4xl text-indigo-500 mb-4 text-center">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white text-center mb-4">Mobile Apps Dev</h3>
+                    <p class="text-gray-400 text-center">
+                        I develop responsive and user-friendly mobile applications for both iOS and Android, focusing on clean code, performance, and intuitive user experiences.
+                    </p>
+                </div>
+                <!-- AI Automation Skill Card -->
+                <div class="bg-gray-800 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="text-4xl text-indigo-500 mb-4 text-center">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white text-center mb-4">AI Automation</h3>
+                    <p class="text-gray-400 text-center">
+                        I automate repetitive tasks and enhance workflows using AI and machine learning, building intelligent systems that optimize processes and provide valuable insights.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="container mx-auto px-6 py-20 min-h-screen">
+            <h2 class="text-4xl font-extrabold text-white text-center mb-16">Recent Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Project Card 1 -->
+                <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <img src="https://placehold.co/600x400/1f2937/d1d5db?text=Graphic+Design+Project" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Brand Identity Design</h3>
+                        <p class="text-gray-400 mb-4">
+                            Developed a complete brand identity, including logo, color palette, and typography, for a startup in the tech industry.
+                        </p>
+                        <a href="#" class="text-indigo-400 hover:text-indigo-300 font-semibold transition-colors duration-300">View Project &rarr;</a>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <img src="https://placehold.co/600x400/1f2937/d1d5db?text=Mobile+App+Project" alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">E-commerce Mobile App</h3>
+                        <p class="text-gray-400 mb-4">
+                            Designed and developed a cross-platform mobile e-commerce application with a clean, intuitive user interface.
+                        </p>
+                        <a href="#" class="text-indigo-400 hover:text-indigo-300 font-semibold transition-colors duration-300">View Project &rarr;</a>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <img src="https://placehold.co/600x400/1f2937/d1d5db?text=AI+Automation+Project" alt="Project 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Automated Data Analysis Tool</h3>
+                        <p class="text-gray-400 mb-4">
+                            Created an AI-powered tool that automates the collection and analysis of marketing data for small businesses.
+                        </p>
+                        <a href="#" class="text-indigo-400 hover:text-indigo-300 font-semibold transition-colors duration-300">View Project &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="container mx-auto px-6 py-20 min-h-screen">
+            <h2 class="text-4xl font-extrabold text-white text-center mb-16">Get in Touch</h2>
+            <div class="max-w-2xl mx-auto bg-gray-800 p-8 md:p-12 rounded-xl shadow-lg">
+                <form id="contact-form" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-300">Name</label>
+                        <input type="text" id="name" name="name" required class="mt-1 block w-full px-4 py-2 bg-gray-900 border border-gray-700 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors duration-300">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-300">Email</label>
+                        <input type="email" id="email" name="email" required class="mt-1 block w-full px-4 py-2 bg-gray-900 border border-gray-700 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors duration-300">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-300">Message</label>
+                        <textarea id="message" name="message" rows="4" required class="mt-1 block w-full px-4 py-2 bg-gray-900 border border-gray-700 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors duration-300"></textarea>
+                    </div>
+                    <button type="submit" class="w-full px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 transition-colors duration-300 transform hover:scale-105">
+                        Send Message
+                    </button>
+                    <div id="form-status" class="text-center mt-4 text-sm font-medium hidden"></div>
+                </form>
+                <div class="flex justify-center space-x-6 mt-10">
+                    <a href="https://linkedin.com" target="_blank" class="text-gray-400 hover:text-white text-2xl transition-colors duration-300">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com" target="_blank" class="text-gray-400 hover:text-white text-2xl transition-colors duration-300">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://behance.net" target="_blank" class="text-gray-400 hover:text-white text-2xl transition-colors duration-300">
+                        <i class="fab fa-behance"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8 text-center text-gray-500 text-sm">
+        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

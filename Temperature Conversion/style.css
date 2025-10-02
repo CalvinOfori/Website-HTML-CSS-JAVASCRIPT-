@@ -1,0 +1,57 @@
+body{
+    background: #f0f0f0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    padding: 1rem;
+}
+
+form{
+    background-color: rgb(248, 250, 225);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    max-width: 300px;
+    width: 100%;
+}
+
+#textbox{
+    text-align: center;
+    border: 2px solid(0, 0%, 0%, 0.8);
+    width: 60%;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+#temperature{
+    color: #2fa3a3;
+}
+
+#fahrenheit{
+    font-family:Georgia;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#celsius{
+    font-family:Georgia;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#submitbtn{
+    background-color: red;
+    color: white;
+    padding: 10px, 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+}
+
+#submitbtn:hover{
+    background-color: rgb(179, 17, 17);
+}
