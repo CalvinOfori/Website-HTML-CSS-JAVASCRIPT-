@@ -1,0 +1,49 @@
+body{
+    font-size: 1.2rem;
+    align-items: center ;
+    justify-content: center;
+    display: flex;
+    margin: 10vh;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+#container{
+    align-content: center;
+    background-color: aqua;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    width: 100%;
+    text-align: center;
+    min-width: 300px;
+    padding: 1rem;
+    margin-bottom: 10px;
+}
+
+button{
+    margin-top: 10px;
+    font-size: 1.1rem;
+    background-color: blue;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;   
+}
+
+button:hover{
+    background-color: rgb(50, 50, 197);
+}
+
+input{
+    text-align: center;
+    width: 70px;
+}
+
+#diceResult{
+    margin: 25px;
+}
+
+#diceImages img{
+    margin: 5px;
+    width: 100px;
+}
